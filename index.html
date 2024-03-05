@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <link rel="stylesheet" href="style.css">
-   <title>Calulator</title>
-</head>
-<body>
-   <div class="main">
-      <input type="text" id = 'res'>
-      <div class="btn">
-         <input type="button" value = 'C' onclick = "Clear()">
-         <input type="button" value = '%' onclick = "Solve('%')">
-         <input type="button" value = '←' onclick ="Back('←')">
-         <input type="button" value = '/' onclick = "Solve('/')">
-         <br>
-         <input type="button" value = '7' onclick = "Solve('7')">
-         <input type="button" value = '8' onclick = "Solve('8')">
-         <input type="button" value = '9' onclick = "Solve('9')">
-         <input type="button" value = 'x' onclick = "Solve('*')">
-         <br>
-         <input type="button" value = '4' onclick = "Solve('4')">
-         <input type="button" value = '5' onclick = "Solve('5')">
-         <input type="button" value = '6' onclick = "Solve('6')">
-         <input type="button" value = '-' onclick = "Solve('-')">
-         <br>
-         <input type="button" value = '1' onclick = "Solve('1')">
-         <input type="button" value = '2' onclick = "Solve('2')">
-         <input type="button" value = '3' onclick = "Solve('3')">
-         <input type="button" value = '+' onclick = "Solve('+')">
-         <br>
-         <input type="button" value = '00'onclick = "Solve('00')">
-         <input type="button" value = '0' onclick = "Solve('0')">
-         <input type="button" value = '.' onclick = "Solve('.')">
-         <input type="button" value = '=' onclick = "Result()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Design Mastery | Cafe Moments</title>
+    
+  </head>
+  <body style="background-image:url(https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwY3VwfGVufDB8fDB8fHww)">
+    <nav>
+      <ul class="nav__links">
+        <li class="link"><a href="#">HOME</a></li>
+        <li class="link"><a href="#">ABOUT US</a></li>
+        <li class="link"><a href="#">Offers</a></li>
+        <li class="link"><a href="#">Order</a></li>
+        <li class="link"><a href="#">Menu</a></li>
+        <li class="link"><a href="#">Testmonials</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="container__left">
+        <div class="left__content">
+          <h4>Mood Mein Coffee</h4>
+          <p>
+            At Mood Mein Coffee, every cup is a canvas of emotions, painted with care and brewed with passion. Step in, let your senses wander, as each sip whispers tales tailored to your mood."
+          </p>
+        </div>
       </div>
-   </div>
-   <script  >
-    function Solve(val) {
-   var v = document.getElementById('res');
-   v.value += val;
-}
-function Result() {
-   var num1 = document.getElementById('res').value;
-   var num2 = eval(num1);
-   document.getElementById('res').value = num2;
-}
-function Clear() {
-   var inp = document.getElementById('res');
-   inp.value = '';
-}
-function Back() {
-   var ev = document.getElementById('res');
-   ev.value = ev.value.slice(0,-1);
-}
-   </script>
-</body>
+      <div class="container__right">
+        
+        <div class="right__content">
+          <h1>ENJOY</h1>
+          <h4>Relaxing moment</h4>
+          <p>
+            "Sip, savor, and indulge in moments brewed to perfection at our cozy café."
+"Where every cup tells a story, and every aroma whispers tales of delight."
+          </p>
+          <div class="action__btns">
+            <button class="btn primary__btn">Explore</button>
+            <button class="btn secondary__btn">See More</button>
+          </div>
+          <div class="socials">
+            <span><i class="ri-instagram-line"></i></span>
+            <span><i class="ri-twitter-fill"></i></span>
+            <span><i class="ri-facebook-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer><center>
+        
+           
+          <p class="lower"><b>all right reserved by <a href="https://www.linkedin.com/in/sakshi-sharma-a6a122271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Sakshi</a></p> </b>
+        </div></center>
+    </footer>
+  </body>
 </html>

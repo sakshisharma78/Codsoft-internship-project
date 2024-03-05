@@ -1,63 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Web Design Mastery | Cafe Moments</title>
+    <title>portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-  </head>
-  <body style="background-image:url(https://images.unsplash.com/photo-1497515114629-f71d768fd07c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlJTIwY3VwfGVufDB8fDB8fHww)">
-    <nav>
-      <ul class="nav__links">
-        <li class="link"><a href="#">HOME</a></li>
-        <li class="link"><a href="#">ABOUT US</a></li>
-        <li class="link"><a href="#">Offers</a></li>
-        <li class="link"><a href="#">Order</a></li>
-        <li class="link"><a href="#">Menu</a></li>
-        <li class="link"><a href="#">Testmonials</a></li>
-      </ul>
-    </nav>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <div class="container">
-      <div class="container__left">
-        <div class="left__content">
-          <h4>Mood Mein Coffee</h4>
-          <p>
-            At Mood Mein Coffee, every cup is a canvas of emotions, painted with care and brewed with passion. Step in, let your senses wander, as each sip whispers tales tailored to your mood."
-          </p>
-        </div>
-      </div>
-      <div class="container__right">
-        
-        <div class="right__content">
-          <h1>ENJOY</h1>
-          <h4>Relaxing moment</h4>
-          <p>
-            "Sip, savor, and indulge in moments brewed to perfection at our cozy café."
-"Where every cup tells a story, and every aroma whispers tales of delight."
-          </p>
-          <div class="action__btns">
-            <button class="btn primary__btn">Explore</button>
-            <button class="btn secondary__btn">See More</button>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+	  
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.0);
+}
+
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Sakshi</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+			 
+			
+			
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEBAPDxAQEBAQDxAPDg8PDw8PDw8QFRUWFxUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQGy0lHSUtLSsrLSstKysrKy0tKy0rLS0rLS0tKystLSstLS0rLS0tLSsrLS0rLS0rKy0tLSsrN//AABEIAPsAyQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAACAAEDBAUGBwj/xAA7EAACAQIDBQYDBgQHAQAAAAAAAQIDEQQhMQUGEkFREyIyYXGBkaGxB0LB0eHwFCNSciQzYoKywvFT/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAEEAwIF/8QAHxEBAQADAAMBAQEBAAAAAAAAAAECAxESITEEQTIi/9oADAMBAAIRAxEAPwDw0QhwEIQgEIcQDCHsPYBh7D2CsAKQ9gkh0gBsKwfCKwAWGsHYVgI7CsG0NYAGhg2gWgBEOMAhCEAhhxgHEIQCHEOkA1grCSCSAZIew6QaiACQVg0h+EAFEJINRCUQIrCsTqmLsuYEFhrE7h6AuIELQLRM4gtARNAtEjQLQEbQwbQLQAiHGAQw4gEIQ6ASCEkEkAkg1EeMSSMQBUQ1EOMCSMAIlENQJo0w40iCBUyaFEmVOybeiKVaq5ZLKL5c5evkFPUrLSFnbWWq9itUk3m5X/fQnnDJJe5DCknJLPVXzsFgOHoCptc/jmW61Jxk45ZZZlWtGwlLElOsnk8n8gpQKdyejV5P2DydoFomlEjaKImgWiRoFoCNoYNgtACIQgHCSGSDSASRJFDRRLFAKMSaERoRLFOBA0YE0KZJCmWIUgqGNIljSLEKQOJfBBy8gMzHVLvs08tZ+nQz41O9e1+SQMqmTf8AUyzsvDccrL5fmLeEnUtBTm8o3vojRwuxavEptcK6NaP2O23Y3atFTkld6ZZvzOhq7HhzRlz3X+Nmv88+15NtPCzc21Z31WqMjGQaWa0y9D1zGbGptW4Vz5HB7ybMdOT6PIuvb30m7RydjkWJMeSzsDc0si/Sd0NKJXw1Sz9S5JBFZoBonlEjaKImCw2gWBGxgmhgCSJIoGJJFAFFE0EBFE9OJBJTgWqUCOlAu0aYUdOmWYUwqVMtQpARQpGZvFK1Oy1k1Ffv0TN+FM5bequu1jBPwQvL+6Wa+VviQYk5cuh6L9n2xO4qs4eLON18zitn7OvWw8JO/auMpKzVk3pfnkj3LZ2HtGKjaKSte2i8kcd2frkafz6/dt/jSw1GyWQWIgVa1CpFXp4iaev8yMJw9OTRPSqTlFdpw8XPgb4X556GZr77Z+Lp5JnJ7z4RSi21pyO3xclwelzksVTxFRN9jGEM7dpLvP2Qn3r1bLOPJNoUXGbXmVJG9vLQlGr3kk/J3RhSN+F7JXy85y2GNHDTurczOLeElaz/AHl/6V4T1IkEkXakSrUiUQSAZKyNoAGDYJjAHFEsSOJNBASQRZpRIaaLdGJFWKMC/RgV6EDQoQAmpUy3Tpg0KZcp0yAI0zznajbr1pS1dSfybSXyPTajUIynLSKcm30R5hjq3G3P+qTeltWIO+3fwNOdDC4rJzUoRv05S+aZ6BVwLq0JQjOVNzi1xQdpK/NeZ5l9nOMcoYjCyu4xX8RB/wBLWTXu1H5nsOyopxjnyRi2SzPj6Ouy4dcFjd3sZRcHQqz4Vw9tJ1qs51bXu+GTcVe60tp7HV7v9pKCdVcL0a8+voamJprS9kM0krImWXVxx58Y06/8yonFyVOPFwpXbfRLmzlt5to7QvTVKMFCavPhpTfZZ5Jyk1xPrZJaWbztu0sXwYiSyvK90+aNHE0eNXTSXpmMcpHrPC2+q8R2xTrTbnVVnFd7K1/QxGek74YaMYySWp5vPU16suxi34eNAT4V8vP65EEibCPN+cZHVna8o5IqVUX7ZXKlVEFSSI2iaaImURMENggSxJYEcSWAFimi7QiVaSL1BEVdoRNGhAp4dGlQiBZoxLtOBDRiW6cSDG3wqShg6jj97hg35SaT+RwdVPs4QS8N5Syzu+vsd9vtJLByTV3OcIx8pXvf4JnCyw1WnBTkrKayd1Zpr43LBb3S2q8NiVK141Y9hUV7WjNpcXs/xPbsDiuCnm/CvofPTjk2ezbrbUhi8JFt95x7OquaqJWfx1XqZv0Y/Mmz8uX3GugwM51pdpLuwWdOP/Z/kW8TXcYyfDdW5Z/IxMTh68KlOtTqSVHjSr0oqN3TaSvFtOzWbtz0N7EYSU6f8mvSnpZVlwPPK946/A4zG13uUn151jsVJzqSUJcbyheLVs9ToNmbQm6Me18ajaXn5mNvDUq073qYeU1dcFJynJvvfDw6vqR7vTqSpylVazs0lolZ3z58i3HkJn2+mVvni791HntTxNeZ2G8NSPfnfKL4V5vmcannfzuadM9Mn6L2nlG1x8P4vZ/BhYh6PrmLCeNLq0jszOh4e6vQp1kXE8rdNPQqVkQU6iIZE9QgkURyBCkCBLEmgQxJoAW6JoYdGdRNGgRWlhjSw6M2gaWHYGhRJa+JhShKpUdoxV2/wXmQ0mcfvjtN1KnYRfcp+K3OfP4afEgrbwbwzxK4LKFJSUop5yur5t6c3oZ+IxsqipwnK6hFRXLL8ylU5dCOF2UTYmfJaGtubtiph8VTUc4VZRp1I8nd5NeauY0kT7HpuWIo25Vab9lJNkynZevWFsynH0Xs+pGpC6zTVmintPByStG1uV4xv8dSngK0qMk1nCXiXTzNLF7QhLPiXxPnyvpy2Vwe0tmyUrzlfpFZRMvF7bjSp1IRfel3brkjU3o2nbiUO89LrNL9TzjaFV3aevPyO+vHy+uG3Z4g2ltCVVqOkI+FfiyvBfmRFjD2vn7+j1NUnIw223tRVPoMWsZTSeWd1cqFG7hq3Fbrw5/IeqRbLacfNa/v96k1VEFKoV5FmoVpFRHIEKQIEkSaBDElgBbpM0KDM2ky/QZFauHZpUGZWHkaVBgWcbjo0acqknorRXOUuSR51KTbcpO7bbb6t6mvvPjHOt2d+7SVrf6mrt/RGN5ADNXI4S4X+8yZgy1XSwASu3dnX7j7IupV5Lnww9Ob+Zi7u7Ili8TToRvwt8VWS+7TXif4e56rRw0adWtQilFU5KUYrlCUU4/ivY5b7Zh6d/z49y9reGq92N+iLEuDh7yT9UmiKUUoRXOxgb27YWGpLR1J3VKHXrJ+S/JGDHG5Xkb8rMZ2sbfLbVOF6VJJ1JLN28ETz2pr1b1LGIqyk5Tk3KUneTerZEo82fR14TCcfM2bLnQKOWYknqGlzev0E0dHMpJtLJ/h7EJLdgSlfXUireypNTaWjWZo1mY+DqcM4y5K6y80atSV8wirVK8ieoyvIoCQI7GAKJLFkMSVAWqTLtBmfTZcoSINahIvSxKhCU3pGLfq+S+JmUJFDa2PU0qcHeKd5NaNhWZUqOUpSlm5O79WCh2IBJDyHRr7pbHeLxdOlbuRfHVfSK5e7CydejfZrsLsMK681/NrtSV9VBeFe92a+2NhOpiI4qlUdOfZqlUjw8UZxTbV1dWau8zbhTS4YRyjBL5aEvCrXlouehbjLOV2n/PxzG0IKjTnWr1Yxp043k+F38klfNt5JeZ49tnaM8RWnWnfPKEW/BBeGP75tm/v/vN/F1uxov8AwtGXda0rVNHP05L3fPLlH0PGOvHG+o87NuWXqo3rn7IZ5/vQGduJ21eXoSpWPTkYQ4zAFojnEk4+gzAhjzNKi+7bo3YpUqXFezzSul1LcG7Z29ggajIZBzZFJlAsEdggGiSLIUHFgWIMtUpFKLLEJgWsXWtTaTzlkvTmZsdB6lRyd37egBFEOhWHATZ6/wDZfsbsMJ/EzX8zEd5XWap/dX4+55hu/sx4rFUcOtJzXaPpTjnN/BW9z3+nTSUYRVoxSUUtElkix0wn9S0Yc/ief/anvVwRez6Eu/Nf4qUX4Kb0pr/VJa+XqdDvxvTHAUEoWliaqaoQeaj1qyXRclzdvO3hlWpKcpSlJylOTlOUneUpN3bb63Fpll/ArJASdl68+iDl9CKWbt7v8iOZqMfvfAkuDxXdloh+ABnL96gNe/qSWGYAO4DJGBIBUqnDJP4+hdqMo043aRamwgJMjkFJgMoFjDsYB0EmAh0BLFm7gd3q06aqyTVJ2lK3jcFrwrqHulu3/FqpNz4YU7cVlnbm/wBD0HYNROFXDSi12NnTckk50nlfLK6aaa9Djs2cnp3065lfbnlu3hK+EVbDJpacSvxKS1vc4JwcZyg9Yyafsz1PYsOwWLoPwSqdpSX9La7y+KT9zzjasf8AEVX/AFO/vz+h51ZdtjpvwkkvFViGE3kd2V6F9kOzrzxGKa8KVCm/N96f/U9Jx+Pp4ahVxFZ2p048T6yeiivNuyXqY242zewwVCm1aUo9rU/vnm/wXscj9rm2uKpSwMH3aSVavZ61JLuRfpFt/wC9Hr5HX/OLi9t7Vq4qvUxNZ96o8op3jTgvDCPkl+L5lBdRMUjy5Bk7IipXd+r+gq8uRNCFkUJJLJCY1xuIgTGbE2C2AMmRMOTBaKDw+vsTSZFQ5sKTIhmwGO2C2UM2MIVwHQ4I6A9S3Aw06NJThJTjUcZzg7Wco2as7aZL4HQ9kozckknJPi63/I5P7LdoXjVw8s+G04eUXk0ve3xO1xtPmtVo/Iw7bfLlfR0THxljn9rrWeac46ea/Q4LbdPw1OcnNSXRp5fI77bCvCF34KsVL+2WV/ocLtnOD8ptr0u0XVfZvncaxzQ3fwPb4vD0dVKonL+2Pel8kZyZ1/2XUOLHSl/88PN+jk4r6XNrBPr1t14Uqc6s+7TpU5VJ+UIq7+h4BtHGzr1quIqeOrUlUl5XeS9ErL2PWftPx/ZbPdNO0sTUhS/2K85fFRt7njor1nfZwG+f7sKT5cuf5DWu/LmR4DShnxP2/MkY7BYCGENcBMBhMBsAGwWO2PTKiRZKwLHYLAZgsJggMIQgHQkMhwNjdjan8Niadb7qfDU86ctfhk/Y9sU4ThxxacWrp3ysfP8ATZ225m9DpJYWrfhleNKXS/3X8cjhu1+XuNGjb4+q6ja8ajjdQTU3JR8Lckuas7KOa73nocNtnZ9ez7qt0Wp6bPFwqcVrWVoRfJpJP6yZk43CpmeZeNbLj5z3Xk6bWUk01qnqd99kn+dipdIUl8XP8jD3jo0Yy4Wr1Ne7ZOK82Q7sbblg5zko8aqKKavwtcN7f8mbcMvKdYMsfDLnXS/a7jeKrhaV8oU6lS39zUV/wZwLka28+1li8R2yTilThTSla6tdvTzkzIlpc9V4t7SS/UJaCjkswWiIJsETYNwHGY1xmwE2RyYpSBbKhEiViOLzJGAmCxxgGYwhgEIQgEOMOA6Zc2ViFGtBySavaz5PkykESzs4svL16Ts/bCi7OnNQdk3dTs1lxZJWukn1zZrVqqS4vFFq6tzOJ2BtDiSi3apHK/Ka8/M6jDYi64WvVGLOcvt9HXezsee18Q6kpVJeKbcpe/L8PYjuau8uzexq8cV/KqtuLX3Z6uP4r9DHb09TZjZZ2Pn5Sy2U0Xl63Df0I1+gaKhXGExmwE2C2JsByKh2yOUhOQICEIQBwHY0RwGYzExgEMIQCGHGAcQhAOOhhAS0qji1KLs1ozo6e8T7Fqy7ZOKTeatzl++pzCJKZ5ywmX17xzyx+L2Kx1Wp/mVJTSzs3ZX62WVytJDXEmWTjzb36S+o7EJlQzYDkKQKX0YDSkA2MIBDpCCQDWBDYIDxHGiIBmMOMAhCEwGEIQH/2Q==);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Sakshi</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Freelancer  ',
+						'Frontend-developer  ',
+						'Backend-developer  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Web Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="" class="btn btn-primary py-3 px-4">View Resume</a> 
+							<a href="" class="btn btn-white btn-outline-white py-3 px-4">Download Resume</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="data:image/jpeg;base64,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" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Sakshi</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Web Developer</span></p>
+										<p><span class="title-s">Experience: </span> <span>Freasher</span></p>
+										<p><span class="title-s">Address: </span> <span>Mathura, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>HTML</span> <span class="pull-right">95</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Django</span> <span class="pull-right">85</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Python</span> <span class="pull-right">80</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									
+									<span>CSS</span> <span class="pull-right">75</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Java</span> <span class="pull-right">75</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Javascript</span> <span class="pull-right">70</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									<span>Flask</span> <span class="pull-right">60</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p> As a web developer, I bring a unique blend of technical expertise and creative problem-solving skills to every project I undertake. With a solid foundation in programming languages such as HTML, CSS, JavaScript, and proficiency in frameworks like Django, I thrive in building responsive, user-friendly web applications.
+
+									My experience spans across various domains, from designing intuitive user interfaces to developing robust backend systems. Whether it's crafting visually stunning websites or optimizing performance for seamless user experiences, I am passionate about leveraging technology to bring ideas to life.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Web &amp; Developer</span></li>
+									
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									
+									
+									<li class="d-flex"><span>Interest:</span> <span>Coding,Traveling, Travel Photography, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								
+								<p><a href="https://www.linkedin.com/in/sakshi-sharma" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>
+				As an aspiring Web Developer eager to kickstart my career, I bring a fresh perspective and a hunger for learning to the table. While I may not have years of professional experience, I am armed with a solid foundation in web development technologies and a passion for creating engaging online experiences.</p>
           </div>
-          <div class="socials">
-            <span><i class="ri-instagram-line"></i></span>
-            <span><i class="ri-twitter-fill"></i></span>
-            <span><i class="ri-facebook-fill"></i></span>
+        </div>
+
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2022-2026</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">GLA University , Mathura</span>
+    					<p class="mt-4">Persuing.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2022</span>
+    					<h2>Intermediate</h2>
+    					<span class="position">M.D Jain Public School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2021-2022</span>
+    					<h2>High School</h2>
+    					<span class="position">Ganga Devi Public School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Empower yourself with our battery finder app to easily locate the perfect battery for your devices..</p>
           </div>
         </div>
-      </div>
-    </div>
-    <footer><center>
-        
-           
-          <p class="lower"><b>all right reserved by <a href="https://www.linkedin.com/in/sakshi-sharma-a6a122271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Sakshi</a></p> </b>
-        </div></center>
-    </footer>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://batteryfinder.netlify.app/" class="block-20 zoom-effect" style="background-image: url('https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/7/8/1404831159078/8973385770_7d413cd7af_o-bestSizeAvailable.jpeg?width=465&dpr=1&s=none');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://batteryfinder.netlify.app/">Battery finder using Javascript</a></h3>
+                <p>Empower yourself with our battery finder app to easily locate the perfect battery for your devices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('https://media.licdn.com/dms/image/D5612AQGIBF1TXmliVw/article-cover_image-shrink_720_1280/0/1674556307187?e=2147483647&v=beta&t=Tfu7G7zCHign8oOpPxuTL3wQQbT38_SNHyekTxVsr3U');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Amazon clone using html and css.</a></h3>
+                <p>Experience the convenience of online shopping with our Amazon clone, offering a wide range of products and seamless shopping experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/sakshisharma78/sending-email-through-django/tree/main/email%20sending%20project/EmailSenderProject" class="block-20 zoom-effect" style="background-image: url('https://maildroppa.com/assets/svg/email-sender-information.svg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/sakshisharma78/sending-email-through-django/tree/main/email%20sending%20project/EmailSenderProject">email sender using Django.</a></h3>
+                <p>Django's built-in email functionality simplifies sending emails in web applications, offering a convenient way to notify users or send messages programmatically.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/sakshisharma78/practice-website/tree/main/my%20work/workspace" class="block-20 zoom-effect" style="background-image: url('https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/sakshisharma78/practice-website/tree/main/my%20work/workspace">practice website using Django</a></h3>
+				  <p> websites offer a safe environment for learners to hone their skills in web development, providing hands-on experience without the pressure of real-world consequences.</p>
+				</div>
+			  </div>
+			</div>
+			
+		 </div>
+	  </div>
+    </section>
+
+	
+	
+	<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+		<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on<span> Github  </span> </h2>
+					<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+					<br>
+					<p><a href="https://github.com/sakshisharma78" class="btn btn-primary py-3 px-5" target="_blank">GitHub</a></p>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
+	</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Contact</h1>
+			  <h2 class="mb-4">Contact Me</h2>
+			  <p>Below are the details to reach out to me!</p>
+			</div>
+		  </div>
+  
+		  <div class="row d-flex contact-info mb-5">
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-map-signs"></span>
+					</div>
+					<h3 class="mb-4">Address</h3>
+				  <p>Mathura, India</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-phone2"></span>
+					</div>
+					<h3 class="mb-4">Contact Number</h3>
+				  <p><a href="tel://0101010101">+91 82720383xx</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-paper-plane"></span>
+					</div>
+					<h3 class="mb-4">Email Address</h3>
+				  <p><a href="mailto:info@yoursite.com">conctact@domainname.com</a></p>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+				<div class="align-self-stretch box p-4 text-center">
+					<div class="icon d-flex align-items-center justify-content-center">
+						<span class="icon-globe"></span>
+					</div>
+					<h3 class="mb-4">Download Resume</h3>
+				  <p><a href="#">resumelink</a></p>
+				</div>
+			</div>
+  
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/e/1FAIpQLScyR1LPANe-qtJwrDecD1bLuLA9g5KkzUYPG1H3CNfzHaGNhA/viewform?usp=sf_link" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					 
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/sakshi-sharma"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://www.instagram.com/sakshi848sharma/"><span class="icon-instagram"></span></a></li>
+					  <li class="ftco-animate"><a href="https://github.com/sakshisharma78"><span class="icon-github"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://www.linkedin.com/in/sakshi-sharma" target="_blank">Sakshi</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  
+    
   </body>
 </html>
